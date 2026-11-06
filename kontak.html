@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Website latihan: minta Google dan mesin pencari lain untuk TIDAK menampilkan halaman ini -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Profil Tim — Kontak</title>
+  <meta name="description" content="Hubungi tim kami.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="wadah">
+      <a href="index.html" class="logo"><span>P</span> Profil Tim</a>
+      <button class="tombol-menu" aria-label="Buka menu">☰</button>
+      <ul class="menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="kontak.html" class="aktif">Kontak</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero hero-kecil">
+    <div class="wadah">
+      <p class="label">Kontak</p>
+      <h1>Yuk ngobrol</h1>
+      <p>Isi form di bawah, kami balas secepatnya.</p>
+    </div>
+  </section>
+
+  <section class="section putih">
+    <div class="wadah dua-kolom" style="align-items: start;">
+
+      <!-- FORM (dummy: belum terkirim ke mana pun, lihat script.js) -->
+      <form id="form-kontak" class="form">
+        <div>
+          <label for="nama">Nama</label>
+          <input id="nama" type="text" placeholder="Nama kamu" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="nama@email.com" required>
+        </div>
+        <div>
+          <label for="kebutuhan">Kebutuhan</label>
+          <select id="kebutuhan">
+            <option>Landing Page</option>
+            <option>Website Profil</option>
+            <option>Perawatan Bulanan</option>
+            <option>Lainnya</option>
+          </select>
+        </div>
+        <div>
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" placeholder="Ceritain sedikit soal project kamu"></textarea>
+        </div>
+        <button type="submit" class="tombol">Kirim Pesan</button>
+        <p class="pesan-terkirim">✓ Pesan terkirim! (Ini masih contoh, belum benar-benar dikirim.)</p>
+      </form>
+
+      <!-- INFO KONTAK -->
+      <div>
+        <h2>Info kontak</h2>
+        <p>Atau hubungi kami langsung lewat:</p>
+        <ul class="info-kontak" style="margin-top: 24px;">
+          <li><span class="ikon">📧</span><div><strong>Email</strong><br>[email@tim-kamu.com]</div></li>
+          <li><span class="ikon">💬</span><div><strong>WhatsApp</strong><br>[08xx-xxxx-xxxx]</div></li>
+          <li><span class="ikon">📍</span><div><strong>Alamat</strong><br>[Alamat kantor kamu]</div></li>
+          <li><span class="ikon">🕘</span><div><strong>Jam kerja</strong><br>Senin–Jumat, 09.00–17.00</div></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wadah">
+      <p>© <span id="tahun"></span> Profil Tim. Website latihan.</p>
+      <p><a href="kontak.html">Kontak</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
